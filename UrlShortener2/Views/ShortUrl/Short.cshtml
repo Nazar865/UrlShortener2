@@ -1,0 +1,18 @@
+﻿@model ShortUrlModel
+
+<div>
+    <h1>Paste Url</h1>
+    <div class="main-container ">
+        <form asp-area="" asp-controller="ShortUrl" asp-action="Short" method="post">
+            <div class="field">
+                <label asp-for="OriginalUrl"></label>
+                <input asp-for="OriginalUrl" class="input-group mb-3 w-75" />
+                <span asp-validation-for="OriginalUrl"></span>
+            </div>
+            <div class="field">
+                <input type="submit" value="Short" class="btn btn-success w-25" />
+            </div>
+                <h1 class="mt-5 text-danger">@ViewData["Response"]</h1>
+        </form>
+    </div>
+</div>

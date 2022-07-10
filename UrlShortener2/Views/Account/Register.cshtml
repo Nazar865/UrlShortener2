@@ -1,0 +1,36 @@
+﻿@model RegisterViewModel
+<div>
+    <h1>Register Account</h1>
+    <div class="main-container">
+        <form asp-area="" asp-controller="Account" asp-action="Register" method="post">
+            <div class="field">
+                <label asp-for="Firstname"></label>
+                <input asp-for="Firstname" />
+                <span asp-validation-for="Firstname"></span>
+            </div>
+            <div class="field">
+                <label asp-for="Lastname"></label>
+                <input asp-for="Lastname" />
+                <span asp-validation-for="Lastname"></span>
+            </div>
+            <div class="field">
+                <label asp-for="Email"></label>
+                <input asp-for="Email" />
+                <span asp-validation-for="Email"></span>
+            </div>
+            <div class="field">
+                <label asp-for="Password"></label>
+                <input asp-for="Password" />
+                <span asp-validation-for="Password"></span>
+            </div>
+            <div class="field">
+                <label asp-for="ConfirmPassword"></label>
+                <input asp-for="ConfirmPassword" />
+                <span asp-validation-for="ConfirmPassword"></span>
+            </div>
+            <div class="field">
+                <input type="submit" value="Register" />
+            </div>
+        </form>
+    </div>
+</div>

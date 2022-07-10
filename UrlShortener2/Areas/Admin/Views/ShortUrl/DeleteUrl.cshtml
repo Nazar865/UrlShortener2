@@ -1,0 +1,10 @@
+﻿@using UrlShortener2.Data.Entities
+@model ShorterUrl
+
+<h3>You really want to delete this Url?</h3>
+<div>
+    <form asp-action="DeleteUrl">
+        <input type="submit" value="Delete" class="btn btn-danger btn-lg" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div> 
